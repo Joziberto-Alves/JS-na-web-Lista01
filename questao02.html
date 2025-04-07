@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    
+
+    <script>
+        const n1 = parseInt(prompt('Digite um número:'))
+        const n2 = parseInt(prompt('Digite um segundo número:'))
+        const opcao = prompt(`
+        ========================
+                Para somar digite 1
+                Para subtrair digite 2
+                Para dividir digite 3
+                Para multiplicar digite 4
+        ========================
+        `)
+        switch(opcao){
+            case '1':
+                alert(`A soma desses numeros é igual a ${n1+n2}`)
+                break;
+            case '2':
+                alert(`A soma desses numeros é igual a ${n1-n2}`)
+                break;
+            case '3':
+                alert(`A soma desses numeros é igual a ${n1/n2}`)
+                break;
+            case '4':
+                alert(`A soma desses numeros é igual a ${n1*n2}`)
+                break;
+            default:
+                alert(`Opção inválida!`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 08</title>
+    <script>
+        const alunos = [];
+        const notas = [];
+
+        for (let i = 0; i < 4; i++) {
+            const nome = prompt(`Digite o nome do aluno ${i + 1}:`);
+            const nota = parseFloat(prompt(`Digite a nota do aluno ${nome}:`));
+            alunos.push(nome);
+            notas.push(nota);
+        }
+
+        const lista = [alunos, notas];
+        alert(`Lista de Alunos e Notas:\n${alunos.join(', ')}\n${notas.join(', ')}`);
+        const nomeBusca = prompt("Digite o nome do aluno que deseja buscar:");
+        const indice = alunos.indexOf(nomeBusca);
+
+        if (indice !== -1) {
+            alert(`Aluno: ${alunos[indice]}, Nota: ${notas[indice]}`);
+        } else {
+            alert("Aluno Inexistente");
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

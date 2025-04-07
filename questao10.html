@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    
+    <script>
+        const calcularSalario = (salario) => {
+            if (salario <= 1630){
+                return salario += salario * 0.15;
+            }else if (salario > 1630 && salario <= 3000){
+                return salario += salario * 0.10;
+            }else if (salario > 3000 && salario <= 5000){
+            }else if (salario > 5000){
+                return salario += 100;
+            }else{
+                return salario;
+            }
+        }   
+        const salario = calcularSalario
+        (parseFloat(prompt("Digite o salário: ")));
+        alert(`O salário com o aumento é: ${salario}`);
+    </script>
+</body>
+</html>

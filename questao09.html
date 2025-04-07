@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 09</title>
+</head>
+<body>
+    
+    <script>
+        const calcularPercentual = (valor, percentual) => {
+            return (valor * percentual) / 100;
+        }
+        const valor = parseInt(prompt('Digite o valor do produto:'))
+        const percentual = parseInt(prompt('Digite o percentual de desconto:'))
+        const resultado = calcularPercentual(valor, percentual);
+        alert(`O valor do produto com desconto é: ${valor - resultado}`)
+    </script>
+</body>
+</html>

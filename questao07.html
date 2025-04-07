@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+    
+    <script>
+        const notas1 = []
+        const notas2 = []
+        const nota1 = parseFloat(prompt('Digite a primeiro nota:'));
+        const nota2 = parseFloat(prompt('Digite a segunda nota:'));
+        notas1.push(nota1, nota2)
+        
+        const nota3 = parseFloat(prompt('Digite a terceira nota:'));
+        const nota4 = parseFloat(prompt('Digite a quarta nota:'));
+        notas2.push(nota3, nota4)
+
+        alert(`As notas do primeiro aluno são: ${notas1.join(', ')}`)
+        alert(`As notas do segundo aluno são: ${notas2.join(', ')}`)
+
+        const notas3 = notas1.concat(notas2)
+
+        alert(`As notas dos dois alunos são: ${notas3.join(', ')}`)
+    </script>
+</body>
+</html>

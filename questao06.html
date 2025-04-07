@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    
+    <script>
+        const frutas=['tomate', 'abacate', 'morango' , 'melancia' ]
+        function menu(){
+            const opcao = parseInt(prompt(`Escolha:
+            1 - Adicionar uma fruta no fim da lista.
+            2 - Remover a última fruta da lista.
+            3 - Exibir as primeiras frutas.
+            4 - Exibir as últimas frutas.
+            5 - Adicionar uma fruta na posição que quiser.`))
+            switch(opcao){
+                case 1:
+                    let fruta = prompt('Insira a fruta que quer adicionar:')
+                    frutas.push(fruta)
+                    break
+                case 2:
+                    frutas.pop()
+                    break
+                case 3:
+                    let mostrarP = parseInt(prompt('Insira quantos itens do inicio se quer mostrar:'))
+                    alert(`As frutas do inicio são: ${frutas.slice(0, mostrarP)}`)
+                    break
+                case 4:
+                    const mostrarF = parseInt(prompt('Insira quantos itens do final se quer mostrar:'))
+                    alert(`As frutas do final são: ${frutas.slice(-mostrarF).join(', ')}`)
+                    break
+                case 5:
+                    const frutaP = prompt('Insira a fruta que quer adicionar:')
+                    const posicao = parseInt(prompt('Em qual posição quer adicionar essa fruta?'))
+                    frutas[posicao] = frutaP  
+                    break
+                default:
+                    alert('Opção inválida!')
+            }
+        }
+        while (true){
+            menu()
+            alert(`Frutas: ${frutas.join(', ')}`)
+        }
+        
+    </script>
+</body>
+</html>
